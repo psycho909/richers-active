@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/perfect-scrollbar.css">
+</head>
+
+<body>
+	<div class="wrapper d-flex flex-column">
+		<nav class="navbar navbar-expand-lg richers-nav">
+			<a class="navbar-brand" href="#">
+				<img src="./images/logo.png" width="176" height="44" class="d-inline-block align-top" alt="">
+			</a>
+		</nav>
+		<!-- 中間背景區 -->
+		<div class="container richers-main">
+			<div class="img-man d-lg-block d-md-block d-none">
+				<img src="images/people.png" alt="" class="img-fluid">
+			</div>
+			<div class="circle">
+				<img src="images/circle01.png" alt="" class="img-fluid">
+				<img src="images/circle02.png" alt="" class="img-fluid">
+				<img src="images/circle03.png" alt="" class="img-fluid">
+				<img src="images/circle04.png" alt="" class="img-fluid">
+			</div>
+		</div>
+
+		<!-- MENU按鈕區 -->
+		<div class="container richers-menu-wrap">
+			<div class="richers-menu d-flex justify-content-around flex-wrap">
+				<a href="javascript:;" class="richers-menu-col" data-modal="info">公司介紹</a>
+				<a href="javascript:;" class="richers-menu-col" data-modal="description">平台說明</a>
+				<a href="javascript:;" class="richers-menu-col" data-modal="contact">聯絡我們</a>
+				<a href="javascript:;" class="richers-menu-col" data-modal="faq">問答中心</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 彈出MODAL區 -->
+	<div class="menu-modal">
+		<!-- 關閉按鈕 -->
+		<div class="modal-close">
+			<img src="images/modal/close.svg" alt="">
+		</div>
+		<!-- 公司介紹 -->
+		<div class="container" data-modal="info">
+			<div class="row my-5">
+				<div class="col text-center">
+					<img class="img-fluid" src="images/modal/info/01.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 平台說明 -->
+		<div class="container" data-modal="description">
+			<div class="row">
+				<div class="col-12 my-5 text-center">
+					<img class="img-fluid" src="images/modal/description/01.png" alt="">
+				</div>
+				<div class="col-12 text-center">
+					<img class="img-fluid" src="images/modal/description/02.png" alt="">
+				</div>
+				<div class="col-12 my-5 text-center">
+					<img class="img-fluid" src="images/modal/description/03.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 聯絡我們 -->
+		<div class="container" data-modal="contact">
+			<div class="row justify-content-center">
+				<div class="col-12 my-4 text-center">
+					<img class="img-fluid" src="images/modal/contact/01.png" alt="">
+				</div>
+				<div class="col-md-6 col-sm-10">
+					<form>
+						<div class="form-group">
+							<label for="name">姓名
+								<span class="ml-1">Name</span>
+							</label>
+							<input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+						</div>
+						<div class="form-group">
+							<label for="phone">電話號碼
+								<span class="ml-1">Phone</span>
+							</label>
+							<input type="number" class="form-control" id="phone" placeholder="請輸入電話號碼">
+						</div>
+						<div class="form-group">
+							<label for="email">電子郵件
+								<span class="ml-1">Email</span>
+							</label>
+							<input type="email" class="form-control" id="email" placeholder="請輸入電子郵件">
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">問題類別
+								<span class="ml-1">Category</span>
+							</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option selected>-選取-</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="question">問題/意見
+								<span class="ml-1">Message</span>
+							</label>
+							<textarea class="form-control" id="question" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+							<label class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" name="">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">透過電子郵件或簡訊連絡我</span>
+							</label>
+						</div>
+						<div class="form-group">
+							<label class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" name="">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description">訂閱P2PTPE最新資訊息</span>
+							</label>
+						</div>
+						<div class="my-3 form-group d-flex justify-content-end">
+							<button type="submit" class="btn richers-btn">送出</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 問答中心 -->
+		<div class="container" data-modal="faq">
+			<div class="row justify-content-center">
+				<div class="col-12 my-4 text-center mb-3">
+					<img class="img-fluid" src="images/modal/faq/01.png" alt="">
+				</div>
+				<div class="col-md-8 col-sm-10 faq-item mb-3">
+					<div class="faq-title d-flex align-items-center">
+						<i class="fa fa-plus-square mr-2" aria-hidden="true"></i>
+						<i class="fa fa-minus-square mr-2" aria-hidden="true"></i>
+						<h5 class="mb-0">投資有金額上下限嗎?</h4>
+					</div>
+					<div class="faq-content ml-4">
+						目前【LnB信用市集】裡的投資金額，每一筆的投資最低為1000元，單筆上限為您當時可見的剩餘可投資額度， 您可以進行多筆的投資組合，總額無上限，也請注意在【LnB信用市集】的投資，您將每月回收部分本金及利息，但無法提前贖回全部投資金額，因此投資前請確認。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/lib/jquery-3.1.1.min.js"></script>
+	<script src="js/perfect-scrollbar.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
